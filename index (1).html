@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Marché Gaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<body>
+
+    <header>
+        <h1>LE MARCHÉ GAMING</h1>
+
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#jeux">Jeux</a>
+            <a href="#promotions">Promotions</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil">
+            <h2>Bienvenue au Marché Gaming !</h2>
+            <p>Tout le gaming, au même endroit.</p>
+            <a href="#jeux" class="button">Découvrir nos produits</a>
+        </section>
+
+        <section id="jeux">
+            <h2>Nos jeux</h2>
+
+            <div class="game-container">
+
+                <div class="game-container">
+
+    <div class="game-card">
+        <img src="images/freefire.jpg" alt="Free Fire" class="game-image">
+        <h3>Free Fire</h3>
+        <p>Plonge dans l'univers du Battle Royale et relève tous les défis.</p>
+        <a href="#" class="button">Découvrir</a>
+    </div>
+
+    <div class="game-card">
+        <img src="images/pubg.jpg" alt="PUBG Mobile" class="game-image">
+        <h3>PUBG Mobile</h3>
+        <p>Survis, explore et deviens le dernier joueur debout.</p>
+        <a href="#" class="button">Découvrir</a>
+    </div>
+
+    <div class="game-card">
+        <img src="images/cod.jpg" alt="Call of Duty Mobile" class="game-image">
+        <h3>Call of Duty Mobile</h3>
+        <p>Découvre des combats intenses et des modes multijoueurs.</p>
+        <a href="#" class="button">Découvrir</a>
+    </div>
+
+</div>
+    </div>
+
+</div>
+                </div>
+
+            </div>
+        </section>
+
+        
+<section id="promotions">
+    <h2>Nos produits</h2>
+    <p>Retrouve les diamants Free Fire disponibles dans notre boutique.</p>
+
+    <div class="game-container">
+
+        <div class="game-card product-card">
+            <h3>110 💎</h3>
+            <p class="price">700 FCFA</p>
+            <button class="button buy-button"
+            onclick="buyProduct('110 Diamants', 700)">
+                Acheter
+            </button>
+            <button class="button whatsapp-button"
+            onclick="orderWhatsApp('110 Diamants', 700)">
+                WhatsApp
+            </button>
+        </div>
+
+        <div class="game-card product-card">
+            <h3>230 💎</h3>
+            <p class="price">1 400 FCFA</p>
+            <button class="button buy-button"
+            onclick="buyProduct('230 Diamants', 1400)">
+                Acheter
+            </button>
+            <button class="button whatsapp-button"
+            onclick="orderWhatsApp('230 Diamants', 1400)">
+                WhatsApp
+            </button>
+        </div>
+
+        <div class="game-card product-card">
+            <h3>581 💎</h3>
+            <p class="price">3 300 FCFA</p>
+            <button class="button buy-button"
+            onclick="buyProduct('581 Diamants', 3300)">
+                Acheter
+            </button>
+            <button class="button whatsapp-button"
+            onclick="orderWhatsApp('581 Diamants', 3300)">
+                WhatsApp
+            </button>
+        </div>
+
+        <div class="game-card product-card">
+            <h3>1 180 💎</h3>
+            <p class="price">7 000 FCFA</p>
+            <button class="button buy-button"
+            onclick="buyProduct('1180 Diamants', 7000)">
+                Acheter
+            </button>
+            <button class="button whatsapp-button"
+            onclick="orderWhatsApp('1180 Diamants', 7000)">
+                WhatsApp
+            </button>
+        </div>
+
+        <div class="game-card product-card">
+            <h3>2 360 💎</h3>
+            <p class="price">15 000 FCFA</p>
+            <button class="button buy-button"
+            onclick="buyProduct('2360 Diamants', 15000)">
+                Acheter
+            </button>
+            <button class="button whatsapp-button"
+            onclick="orderWhatsApp('2360 Diamants', 15000)">
+                WhatsApp
+            </button>
+        </div>
+
+    </div>
+
+    <!-- FORMULAIRE DE COMMANDE -->
+
+    <div id="commande" class="game-card order-box">
+
+        <h2>Finaliser ma commande</h2>
+
+        <p>Produit :
+            <span id="selectedProduct">Aucun</span>
+        </p>
+
+        <p>Prix :
+            <span id="selectedPrice">0 FCFA</span>
+        </p>
+
+        <label for="playerID">
+            ID de ton compte Free Fire :
+        </label>
+
+        <input
+            type="number"
+            id="playerID"
+            placeholder="Entre ton ID joueur"
+        >
+
+        <button class="button buy-button" type="button"
+        id="sendOrder">
+            Envoyer ma commande
+        </button>
+
+        <p>Une fois ta commande envoyée, tu pourras échanger avec la boutique.</p>
+
+    </div>
+
+</section>
+
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Bienvenue dans notre univers gaming !</p>
+        </section>
+    </main>
+
+<<!-- BARRE DE RECHERCHE -->
+</p>
+<div class="search-container">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Rechercher un jeu ou un produit..."
+    >
+
+    <button onclick
